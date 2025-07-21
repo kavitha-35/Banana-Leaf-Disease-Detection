@@ -6,24 +6,25 @@ model is trained on a dataset of labeled banana leaf images
 and performs multi-class image classification.
 
 -----------------------------------------------------------
-1. DATASET STRUCTURE
+1. DATASET Collection 
 -----------------------------------------------------------
-The dataset is organized in a directory format:
+The dataset used in this project was downloaded from Kaggle:
 
-Banana Disease Recognition/
-├── Train/
-│   ├── Black Sigatoka/
-│   ├── Bract Mosaic Virus/
-│   ├── Healthy/
-│   ├── Insect Pest/
-│   ├── Moko/
-│   ├── Panama/
-│   └── Yellow Sigatoka/
-└── Test/
-    ├── ... (same structure as Train)
+https://www.kaggle.com/datasets/sujaykapadnis/banana-disease-recognition-dataset
 
-Images are resized to (128, 128) and normalized for training.
+This dataset contains categorized images of banana leaves, each labeled with a specific disease class or as healthy. The classes include:
 
+- Black Sigatoka
+- Bract Mosaic Virus
+- Healthy
+- Insect Pest
+- Moko
+- Panama
+- Yellow Sigatoka
+
+The images are organized into separate folders for each class under `Train` and `Test` directories, making it suitable for direct use with TensorFlow's `flow_from_directory` method.
+
+The dataset is used to train and evaluate a Convolutional Neural Network for automatic banana leaf disease classification.
 -----------------------------------------------------------
 2. MODEL OVERVIEW
 -----------------------------------------------------------
