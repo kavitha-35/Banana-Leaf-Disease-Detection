@@ -22,8 +22,6 @@ This dataset contains categorized images of banana leaves, each labeled with a s
 - Panama
 - Yellow Sigatoka
 
-The images are organized into separate folders for each class under `Train` and `Test` directories, making it suitable for direct use with TensorFlow's `flow_from_directory` method.
-
 The dataset is used to train and evaluate a Convolutional Neural Network for automatic banana leaf disease classification.
 -----------------------------------------------------------
 2. MODEL OVERVIEW
