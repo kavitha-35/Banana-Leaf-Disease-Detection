@@ -67,9 +67,9 @@ The model is trained for 100 epochs.
     - AUC-ROC score (multi-class)
 -----
 # Model Results
-![Accuracy](Result/Banana Disease Recognition_Accuracy.jpg)
-![Loss](Result/Banana Disease Recognition_Loss.jpg)
-![Confusion_Matrix](Result/Banana Disease Recognition_Confusion_Matrix.jpg)
+![Banana Disease Recognition_Accuracy](Result/Banana Disease Recognition_Accuracy.jpg)
+![Banana Disease Recognition_Loss](Result/Banana Disease Recognition_Loss.jpg)
+![Banana Disease Recognition_Confusion_Matrix](Result/Banana Disease Recognition_Confusion_Matrix.jpg)
 
 
 --- 
