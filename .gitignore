@@ -14,8 +14,7 @@ __pycache__/
 .venv/
 
 # Ignore specific folders
-Banana Disease Recognition Dataset/
-Banana Disease Recognition/
+
 
 
 # Ignore logs and temporary files
