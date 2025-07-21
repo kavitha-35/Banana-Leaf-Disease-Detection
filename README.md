@@ -1,11 +1,11 @@
-# Banana-Leaf-Disease-Detection
-```
+## Banana-Leaf-Disease-Detection
+
 This project implements a **Convolutional Neural Network (CNN)** 
 using TensorFlow/Keras to classify **banana leaves** into 
 various **disease categories**, including healthy leaves. The 
 model is trained on a dataset of labeled banana leaf images 
 and performs multi-class image classification.
-```
+
 ---
 ## 🛠️ Tech Stack
 
