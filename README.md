@@ -12,8 +12,11 @@ and performs multi-class image classification.
 - Python
 - Flask
 - TensorFlow / Keras
-- MNIST Dataset
+- Kaggle Dataset
 - HTML/CSS
+- sklearn
+- seaborn
+- opencv-python
 
 ---
 # 1. DATASET Collection 
@@ -105,16 +108,6 @@ Below are the visual results of the trained CNN model:
 ![Page2](Result/Capture2.JPG)
 ![Page3](Result/Capture3.JPG)
 ![Prediction Result](Result/Capture4.JPG)
----
-# 5. DEPENDENCIES
-
-- tensorflow
-- keras
-- numpy
-- matplotlib
-- seaborn
-- sklearn
-- PIL (for image loading)
 ---
 ### 🧪 How to Run Locally
 ```
