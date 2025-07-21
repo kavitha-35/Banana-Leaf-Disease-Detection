@@ -106,16 +106,6 @@ Below are the visual results of the trained CNN model:
 ![Page3](Result/Capture3.JPG)
 ![Prediction Result](Result/Capture4.JPG)
 ---
-# 5. DEPENDENCIES
-
-- tensorflow
-- keras
-- numpy
-- matplotlib
-- seaborn
-- sklearn
-- PIL (for image loading)
----
 ### 🧪 How to Run Locally
 ```
 git clone https://github.com/kavitha-35/Banana-Leaf-Disease-Detection.git
