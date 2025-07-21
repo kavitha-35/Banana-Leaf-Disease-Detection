@@ -88,7 +88,14 @@ Below are the visual results of the trained CNN model:
 - seaborn
 - sklearn
 - PIL (for image loading)
-Install dependencies with:
-pip install -r requirements.txt
 ---
+### 🧪 How to Run Locally
+```
+git clone https://github.com/kavitha-35/Digit-Recognition.git
+cd Digit-Recognition
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
 
