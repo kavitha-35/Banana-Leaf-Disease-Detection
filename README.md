@@ -112,7 +112,7 @@ Below are the visual results of the trained CNN model:
 ### 🧪 How to Run Locally
 ```
 git clone https://github.com/kavitha-35/Banana-Leaf-Disease-Detection.git
-cd Digit-Recognition
+cd Banana-Leaf-Disease-Detection
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
