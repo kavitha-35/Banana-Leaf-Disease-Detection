@@ -67,22 +67,16 @@ The model is trained for 100 epochs.
     - AUC-ROC score (multi-class)
 -----
 # Model Results
------------------------------------------------------------
-9. MODEL RESULTS
------------------------------------------------------------
-
 Below are the visual results of the trained CNN model:
 
-1. Accuracy Curve (Training vs. Validation):
+1. Accuracy Curve (Training vs. Testing):
    ![Training vs Validation Accuracy](Result/Banana%20Disease%20Recognition_Accuracy.jpg)
 
-2. Loss Curve (Training vs. Validation):
+2. Loss Curve (Training vs. Testing):
    ![Training vs Validation Loss](Result/Banana%20Disease%20Recognition_Loss.jpg)
 
 3. Confusion Matrix:
    ![Confusion Matrix](Result/Banana%20Disease%20Recognition_Confusion_Matrix.jpg)
-
-
 
 --- 
 # 5. DEPENDENCIES
