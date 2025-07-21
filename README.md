@@ -67,9 +67,21 @@ The model is trained for 100 epochs.
     - AUC-ROC score (multi-class)
 -----
 # Model Results
-![Banana Disease Recognition_Accuracy](Result/Banana Disease Recognition_Accuracy.jpg)
-![Banana Disease Recognition_Loss](Result/Banana Disease Recognition_Loss.jpg)
-![Banana Disease Recognition_Confusion_Matrix](Result/Banana Disease Recognition_Confusion_Matrix.jpg)
+-----------------------------------------------------------
+9. MODEL RESULTS
+-----------------------------------------------------------
+
+Below are the visual results of the trained CNN model:
+
+1. Accuracy Curve (Training vs. Validation):
+   ![Training vs Validation Accuracy](Result/Banana%20Disease%20Recognition_Accuracy.jpg)
+
+2. Loss Curve (Training vs. Validation):
+   ![Training vs Validation Loss](Result/Banana%20Disease%20Recognition_Loss.jpg)
+
+3. Confusion Matrix:
+   ![Confusion Matrix](Result/Banana%20Disease%20Recognition_Confusion_Matrix.jpg)
+
 
 
 --- 
