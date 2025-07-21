@@ -58,13 +58,6 @@ Dense_1            | Dense (256 units)  | (256,)             | 6,422,784
 Dropout_4          | Dropout (50%)      | (256,)             | 0
 Output             | Dense (Softmax)    | (7,)               | 7
 
-
-The CNN architecture includes:
-- 3 convolutional layers with ReLU activation and max pooling
-- Dropout layers to reduce overfitting
-- A fully connected dense layer
-- A softmax output layer for classification
-
 The model is compiled with:
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
