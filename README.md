@@ -79,6 +79,13 @@ Below are the visual results of the trained CNN model:
    ![Confusion Matrix](Result/Banana%20Disease%20Recognition_Confusion_Matrix.jpg)
 
 --- 
+## Screenshots
+
+![App Home Screen](Result/Capture1.JPG)
+![Page2](Result/Capture2.JPG)
+![Page3](Result/Capture3.JPG)
+![Prediction Result](Result/Capture4.JPG)
+---
 # 5. DEPENDENCIES
 
 - tensorflow
@@ -91,7 +98,7 @@ Below are the visual results of the trained CNN model:
 ---
 ### 🧪 How to Run Locally
 ```
-git clone https://github.com/kavitha-35/Digit-Recognition.git
+git clone https://github.com/kavitha-35/Banana-Leaf-Disease-Detection.git
 cd Digit-Recognition
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
