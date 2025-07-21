@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banana Leaf Disease Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <header>Banana Leaf Disease Prediction</header>
+
+  <main class="container">
+    <div class="highlight-box">
+      <section class="upload-section">
+        <label for="imageUpload" class="upload-label">Upload Banana Leaf Image:</label><br />
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" onchange="previewImage(event)" />
+        <br />
+        <img id="previewImage" src="#" alt="Uploaded Image" style="display: none; max-width: 300px;" />
+      </section>
+
+      <section class="action-section">
+        <button type="button" onclick="predictDisease()">Predict Disease</button>
+      </section>
+
+      <section class="result-section" id="result">
+        <!-- Prediction result will appear here -->
+      </section>
+
+      <section id="chartContainer">
+        <canvas id="probabilityChart" width="400" height="250"></canvas>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    function previewImage(event) {
+      const image = document.getElementById('previewImage');
+      image.src = URL.createObjectURL(event.target.files[0]);
+      image.style.display = 'block';
+    }
+
+    function predictDisease() {
+      const input = document.getElementById("imageUpload");
+      const file = input.files[0];
+
+      if (!file) {
+        alert("Please upload an image first.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("image", file);
+
+      fetch("/predict", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("result").innerHTML = `
+          <p><strong>Prediction:</strong> ${data.Class_names}</p>
+        `;
+
+        const ctx = document.getElementById("probabilityChart").getContext("2d");
+        if (window.chartInstance) {
+          window.chartInstance.destroy(); // Destroy old chart if exists
+        }
+        window.chartInstance = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: data.labels,
+            datasets: [{
+              label: "Prediction Probability",
+              data: data.prediction,
+              backgroundColor: "rgba(76, 175, 80, 0.6)",
+              borderColor: "rgba(76, 175, 80, 1)",
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 1
+              }
+            }
+          }
+        });
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("result").innerHTML = `<p style="color:red;">Error: Prediction failed</p>`;
+      });
+    }
+  </script>
+
+</body>
+</html>
