@@ -1,4 +1,4 @@
-## Banana-Leaf-Disease-Detection
+## Banana-Leaf-Disease-Prediction
 
 This project implements a **Convolutional Neural Network (CNN)** 
 using TensorFlow/Keras to classify **banana leaves** into 
@@ -38,7 +38,7 @@ This dataset contains categorized images of banana leaves, each labeled with a s
 # 2. MODEL OVERVIEW
 **MODEL ARCHITECTURE**
 
-The Convolutional Neural Network (CNN) used in **Banana-Leaf-Disease-Detection**
+The Convolutional Neural Network (CNN) used in **Banana-Leaf-Disease-Prediction**
 is designed to automatically extract features from banana 
 leaf images and classify them into one of the disease classes.
 
