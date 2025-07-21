@@ -88,7 +88,6 @@ Below are the visual results of the trained CNN model:
 - seaborn
 - sklearn
 - PIL (for image loading)
-
 Install dependencies with:
 pip install -r requirements.txt
 ---
