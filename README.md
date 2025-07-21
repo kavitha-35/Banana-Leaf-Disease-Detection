@@ -5,9 +5,9 @@ various disease categories, including healthy leaves. The
 model is trained on a dataset of labeled banana leaf images 
 and performs multi-class image classification.
 
------------------------------------------------------------
+**-----------------------------------------------------------
 1. DATASET Collection 
------------------------------------------------------------
+-----------------------------------------------------------**
 The dataset used in this project was downloaded from Kaggle:
 
 https://www.kaggle.com/datasets/sujaykapadnis/banana-disease-recognition-dataset
@@ -22,10 +22,9 @@ This dataset contains categorized images of banana leaves, each labeled with a s
 - Panama
 - Yellow Sigatoka
 
-The dataset is used to train and evaluate a Convolutional Neural Network for automatic banana leaf disease classification.
------------------------------------------------------------
+**-----------------------------------------------------------
 2. MODEL OVERVIEW
------------------------------------------------------------
+-----------------------------------------------------------**
 The CNN architecture includes:
 - 3 convolutional layers with ReLU activation and max pooling
 - Dropout layers to reduce overfitting
