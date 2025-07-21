@@ -33,6 +33,31 @@ This dataset contains categorized images of banana leaves, each labeled with a s
 - Yellow Sigatoka
 ---
 # 2. MODEL OVERVIEW
+**MODEL ARCHITECTURE**
+
+The Convolutional Neural Network (CNN) used in **Banana-Leaf-Disease-Detection**
+is designed to automatically extract features from banana 
+leaf images and classify them into one of the disease classes.
+
+**The model has the following architecture:**
+
+Layer Name         | Type               | Output Shape       | Parameters
+------------------ | ------------------ | ------------------ | ----------
+Input              | Input Layer        | (128, 128, 3)      | 0
+Conv2D_1           | Conv2D (3×3, 32)   | (126, 126, 32)     | 896
+MaxPooling2D_1     | MaxPooling2D (2×2) | (63, 63, 32)       | 0
+Dropout_1          | Dropout (25%)      | (63, 63, 32)       | 0
+Conv2D_2           | Conv2D (3×3, 64)   | (61, 61, 64)       | 18,496
+MaxPooling2D_2     | MaxPooling2D (2×2) | (30, 30, 64)       | 0
+Dropout_2          | Dropout (25%)      | (30, 30, 64)       | 0
+Conv2D_3           | Conv2D (3×3, 128)  | (28, 28, 128)      | 73,856
+MaxPooling2D_3     | MaxPooling2D (2×2) | (14, 14, 128)      | 0
+Dropout_3          | Dropout (25%)      | (14, 14, 128)      | 0
+Flatten            | Flatten            | (25088,)           | 0
+Dense_1            | Dense (256 units)  | (256,)             | 6,422,784
+Dropout_4          | Dropout (50%)      | (256,)             | 0
+Output             | Dense (Softmax)    | (7,)               | 7
+
 
 The CNN architecture includes:
 - 3 convolutional layers with ReLU activation and max pooling
