@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
 ## Banana-Leaf-Disease-Prediction
 =======
-## Banana-Leaf-Disease-Detection
->>>>>>> Stashed changes
-
 This project implements a **Convolutional Neural Network (CNN)** 
 using TensorFlow/Keras to classify **banana leaves** into 
 various **disease categories**, including healthy leaves. The 
@@ -16,17 +12,11 @@ and performs multi-class image classification.
 - Python
 - Flask
 - TensorFlow / Keras
-<<<<<<< Updated upstream
 - Kaggle Dataset
 - HTML/CSS
 - sklearn
 - seaborn
 - opencv-python
-=======
-- MNIST Dataset
-- HTML/CSS
->>>>>>> Stashed changes
-
 ---
 # 1. DATASET Collection 
 
@@ -46,12 +36,7 @@ This dataset contains categorized images of banana leaves, each labeled with a s
 ---
 # 2. MODEL OVERVIEW
 **MODEL ARCHITECTURE**
-
-<<<<<<< Updated upstream
-The Convolutional Neural Network (CNN) used in **Banana-Leaf-Disease-Prediction**
-=======
 The Convolutional Neural Network (CNN) used in **Banana-Leaf-Disease-Detection**
->>>>>>> Stashed changes
 is designed to automatically extract features from banana 
 leaf images and classify them into one of the disease classes.
 
@@ -74,16 +59,6 @@ Dense_1            | Dense (256 units)  | (256,)             | 6,422,784
 Dropout_4          | Dropout (50%)      | (256,)             | 0
 Output             | Dense (Softmax)    | (7,)               | 7
 
-<<<<<<< Updated upstream
-=======
-
-The CNN architecture includes:
-- 3 convolutional layers with ReLU activation and max pooling
-- Dropout layers to reduce overfitting
-- A fully connected dense layer
-- A softmax output layer for classification
-
->>>>>>> Stashed changes
 The model is compiled with:
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
@@ -132,12 +107,6 @@ Below are the visual results of the trained CNN model:
 ![Page3](Result/Capture3.JPG)
 ![Prediction Result](Result/Capture4.JPG)
 ---
-<<<<<<< Updated upstream
-### 🧪 How to Run Locally
-```
-git clone https://github.com/kavitha-35/Banana-Leaf-Disease-Detection.git
-cd Banana-Leaf-Disease-Detection
-=======
 # 5. DEPENDENCIES
 
 - tensorflow
@@ -151,8 +120,7 @@ cd Banana-Leaf-Disease-Detection
 ### 🧪 How to Run Locally
 ```
 git clone https://github.com/kavitha-35/Banana-Leaf-Disease-Detection.git
-cd Digit-Recognition
->>>>>>> Stashed changes
+cd Banana-Leaf-Disease-Detection
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
