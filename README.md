@@ -4,6 +4,14 @@ using TensorFlow/Keras to classify banana leaves into
 various disease categories, including healthy leaves. The 
 model is trained on a dataset of labeled banana leaf images 
 and performs multi-class image classification.
+---
+## 🛠️ Tech Stack
+
+- Python
+- Flask
+- TensorFlow / Keras
+- MNIST Dataset
+- HTML/CSS
 
 ---
 # 1. DATASET Collection 
@@ -58,6 +66,13 @@ The model is trained for 100 epochs.
     - F1-score (macro avg)
     - AUC-ROC score (multi-class)
 -----
+# Model Results
+![Accuracy](Result/Banana Disease Recognition_Accuracy.jpg)
+![Loss](Result/Banana Disease Recognition_Loss.jpg)
+![Confusion_Matrix](Result/Banana Disease Recognition_Confusion_Matrix.jpg)
+
+
+--- 
 # 5. DEPENDENCIES
 
 - tensorflow
@@ -70,3 +85,5 @@ The model is trained for 100 epochs.
 
 Install dependencies with:
 pip install -r requirements.txt
+---
+
